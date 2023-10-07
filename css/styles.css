@@ -395,6 +395,29 @@ main {
 	margin-bottom: 20px; /* Adjust as needed */
 }
 
+/* For light theme */
+.light .link svg path:first-child {
+	fill: #2978b5; /* This matches the primary color in light mode */
+}
+
+.light .link svg path:not(:first-child) {
+	fill: white; /* This keeps the other details white in light mode */
+}
+
+/* For dark theme */
+.dark .link svg path:first-child {
+	fill: var(--clr-primary); /* This matches the primary color in dark mode */
+}
+
+.dark .link svg path:not(:first-child) {
+	fill: var(--clr-fg); /* This matches the foreground color in dark mode */
+}
+
+/* For dark theme */
+.dark .link svg .letter {
+	fill: #e4d2d8 !important;
+}
+
 @media (max-width: 600px) {
 	.header {
 		height: 6em;
